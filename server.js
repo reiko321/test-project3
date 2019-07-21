@@ -2,6 +2,10 @@ const express = require("express");
 
 const app = express();
 
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+app.use(express.static("client/build"));
+
 app.get("/api/customers", (req, res) => {
     const customers = [
         {id: 1, firstName: "Jeff", lastName: "Raimundo"},
