@@ -1,0 +1,17 @@
+body {
+    background-image: url(combined-bg.png);
+    background-size: 100%;
+}
+
+.col {
+    margin: 20px;
+    width: 30%;
+    height: auto;
+    background-color: black;
+    color: #FDB913;
+    opacity: 0.9;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20%;
+}
