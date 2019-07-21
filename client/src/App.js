@@ -2,10 +2,10 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // import logo from './logo.svg';
 import './App.css';
-import Login from './components/Login/login'
-import Search from './components/Search/search'
-import Results from './components/Results/results'
-import NoMatch from './components/NoMatch/noMatch'
+import Login from './components/Login/login.js'
+import Search from './components/Search/search.js'
+import Results from './components/Results/results.js'
+import NoMatch from './components/NoMatch/noMatch.js'
 
 function App() {
   return (
