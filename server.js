@@ -6,14 +6,14 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static("client/build"));
 
-// app.get("/api/customers", (req, res) => {
-//     const customers = [
+// app.get("/api/team", (req, res) => {
+//     const team = [
 //         {id: 1, firstName: "Jeff", lastName: "Raimundo"},
 //         {id: 2, firstName: "Jon", lastName: "Jensen"},
 //         {id: 3, firstName: "Randy", lastName: "Jones"},
 //         {id: 4, firstName: "Roland", lastName: "Tellez"},
 //     ];
-//     res.json(customers);
+//     res.json(team);
 // });
 
 const PORT = process.env.PORT || 3001;
