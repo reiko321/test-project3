@@ -6,9 +6,15 @@ console.log(apiKey);
 
 function searchFlights(flightData, cb) {
 
-    // let flighParamaters = {};
+    let flightParameters = {
+        iataCode: flightData.iataCode,
+        flightNumber: flightData.flightNumber
+    };
+    console.log(flightParameters)
+    
+    let flight = flightParameters.iataCode + flightParameters.flightNumber;
 
-    axios.get("http://aviation-edge.com/v2/public/flights?key=" + apiKey + "&flightIata=dl9925").then(function(response) {
+    axios.get("http://aviation-edge.com/v2/public/flights?key=" + apiKey + "&flightIata=" + flight).then(function(response) {
          console.log(response.data);
         //console.log(response.data[0].geography.latitude);
 
@@ -19,5 +25,5 @@ function searchFlights(flightData, cb) {
     });
 };
 
-searchFlights();
+// searchFlights();
 module.exports = searchFlights;

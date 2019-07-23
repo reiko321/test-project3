@@ -52,7 +52,7 @@ class Search extends Component {
                             <input type="text" className="form-control" id="flight-number" placeholder="----------------"/>
                         </div>
 
-                        <a class="btn btn-secondary" href="/Results" role="button" type="submit">Submit</a>
+                        <a className="btn btn-secondary" href="/Results" role="button" type="submit">Submit</a>
 
                     </form>
 
