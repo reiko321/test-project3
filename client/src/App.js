@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch, withRouter } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 // import logo from './logo.svg';
 import './App.css';
 import Login from './components/Login/login'
@@ -23,4 +23,4 @@ function App() {
   );
 }
 
-export default withRouter(App);
+export default App;
