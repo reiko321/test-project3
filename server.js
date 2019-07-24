@@ -10,13 +10,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(express.static("client/build"));
 
-app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname, "client/public/index.html"), function(err) {
-      if (err) {
-        res.status(500).send(err)
-      }
-    });
+app.get('*', function(req, res) {
+  res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
+
 
 require("./routes/routes-API.js")(app);
 
