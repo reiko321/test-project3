@@ -27,7 +27,7 @@ class Login extends Component {
 
                         </div>
 
-                        <a className="btn btn-secondary" href="/Search" role="button" type="submit" id="login-btn">Login</a>
+                        <a className="btn btn-secondary" href="/search" role="button" type="submit" id="login-btn">Login</a>
 
                     </form>
 

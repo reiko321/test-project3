@@ -1,4 +1,4 @@
-const searchFlights = require("../components/avAPI.js");
+const searchFlights = require("../../components/avAPI.js");
 
 module.exports = function(app) {
 
