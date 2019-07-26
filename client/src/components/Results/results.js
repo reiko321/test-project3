@@ -4,8 +4,11 @@ import "./results.css";
 
 class Results extends Component {
 
+
     render() {
         return (
+            <div className="App">
+                    
             <div className="container">
 
                 <div className="row">
@@ -24,6 +27,7 @@ class Results extends Component {
 
                 </div>
                 <a href="/search">← Back to search</a>
+            </div>
             </div>
         );
 

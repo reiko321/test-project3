@@ -1,6 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const routes = require("./routes");
+require("./config/connection")
 // const apiKey = process.env.API_KEY;
 // console.log(apiKey);
 
@@ -12,12 +13,9 @@ app.use(express.json());
 app.use(express.static("client/build"));
 app.use(routes);
 
-// app.get('*', function(req, res) {
-//   res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
-// });
-
 
 require("./routes/api/routes-API")(app);
+require("./routes/sqlRoutes")(app);
 
 app.listen(PORT, () => console.log("Congratulations!! API Server is now listening on: " + PORT));
 
